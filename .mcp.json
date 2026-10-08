@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "salg-admin": {
+      "type": "http",
+      "url": "https://www.salg.club/api/mcp"
+    }
+  }
+}

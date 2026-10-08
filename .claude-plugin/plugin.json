@@ -1,0 +1,14 @@
+{
+  "name": "ats-operacao",
+  "description": "Skills, agentes e o MCP salg-admin para a operação do ATS.",
+  "version": "1.0.0",
+  "author": {
+    "name": "salgsystem",
+    "url": "https://github.com/salgsystem"
+  },
+  "homepage": "https://github.com/salgsystem/ats-operacao",
+  "repository": "https://github.com/salgsystem/ats-operacao",
+  "dependencies": [
+    { "name": "oh-my-claudecode", "marketplace": "omc" }
+  ]
+}

@@ -1,0 +1,12 @@
+Material de terceiros distribuído neste plugin
+
+agents/*.md
+  Origem: oh-my-claudecode (https://github.com/Yeachan-Heo/oh-my-claudecode)
+  Licença: MIT, Copyright (c) 2025 Yeachan Heo. Texto completo em LICENSE-OMC.txt.
+
+skills/frontend-design/
+skills/webapp-testing/
+  Licença: Apache License 2.0. Texto completo no LICENSE.txt de cada pasta.
+
+skills/vercel-react-best-practices/
+  Origem: Vercel Engineering. Licença declarada no SKILL.md: MIT.

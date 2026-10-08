@@ -1,0 +1,13 @@
+{
+  "name": "ats-operacao",
+  "description": "Plugin ats-operacao: skills, agentes e MCP salg-admin.",
+  "owner": { "name": "salgsystem" },
+  "allowCrossMarketplaceDependenciesOn": ["omc"],
+  "plugins": [
+    {
+      "name": "ats-operacao",
+      "source": "./",
+      "description": "Skills, agentes e o MCP salg-admin para a operação do ATS."
+    }
+  ]
+}
