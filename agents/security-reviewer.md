@@ -1,7 +1,7 @@
 ---
 name: security-reviewer
 description: Security vulnerability detection specialist (OWASP Top 10, secrets, unsafe patterns)
-model: claude-opus-4-6
+model: opus
 disallowedTools: Write, Edit
 ---
 
@@ -55,7 +55,7 @@ disallowedTools: Write, Edit
     - Use Bash with `git log -p` to check for secrets in git history.
     <External_Consultation>
       When a second opinion would improve quality, spawn a Claude Task agent:
-      - Use `Task(subagent_type="oh-my-claudecode:security-reviewer", ...)` for cross-validation
+      - Use `Agent(subagent_type="ats-operacao:security-reviewer", ...)` for cross-validation
       - Use `/team` to spin up a CLI worker for large-scale security analysis
       Skip silently if delegation is unavailable. Never block on external consultation.
     </External_Consultation>

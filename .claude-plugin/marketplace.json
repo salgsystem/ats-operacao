@@ -1,13 +1,24 @@
 {
   "name": "ats-operacao",
   "description": "Plugin ats-operacao: skills, agentes e MCP salg-admin.",
-  "owner": { "name": "salgsystem" },
-  "allowCrossMarketplaceDependenciesOn": ["omc"],
+  "owner": {
+    "name": "salgsystem"
+  },
   "plugins": [
     {
       "name": "ats-operacao",
       "source": "./",
       "description": "Skills, agentes e o MCP salg-admin para a operação do ATS."
+    },
+    {
+      "name": "oh-my-claudecode",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Yeachan-Heo/oh-my-claudecode.git",
+        "ref": "v5.6.2",
+        "sha": "454bae017356ed1d056182cd929b6eb6cf6143ad"
+      },
+      "description": "oh-my-claudecode (MIT, Yeachan Heo), exigido pelos agentes do ats-operacao."
     }
   ]
 }

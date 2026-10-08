@@ -1,7 +1,7 @@
 ---
 name: executor
-description: Focused task executor for implementation work (Sonnet)
-model: claude-sonnet-4-6
+description: Focused task executor for implementation work
+model: sonnet
 ---
 
 <Agent_Prompt>
@@ -62,7 +62,7 @@ model: claude-sonnet-4-6
     - Spawn parallel explore agents (max 3) when searching 3+ areas simultaneously.
     <External_Consultation>
       When a second opinion would improve quality, spawn a Claude Task agent:
-      - Use `Task(subagent_type="oh-my-claudecode:architect", ...)` for architectural cross-checks
+      - Use `Agent(subagent_type="ats-operacao:architect", ...)` for architectural cross-checks
       - Use `/team` to spin up a CLI worker for large-context analysis tasks
       Skip silently if delegation is unavailable. Never block on external consultation.
     </External_Consultation>

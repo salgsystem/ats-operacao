@@ -9,6 +9,6 @@
   "homepage": "https://github.com/salgsystem/ats-operacao",
   "repository": "https://github.com/salgsystem/ats-operacao",
   "dependencies": [
-    { "name": "oh-my-claudecode", "marketplace": "omc" }
+    "oh-my-claudecode"
   ]
 }

@@ -8,15 +8,14 @@ Plugin do Claude Code para a operação do ATS. Traz:
 
 ## Instalar
 
-Os agentes dependem do oh-my-claudecode (ferramentas `lsp_*`/`ast_grep_*`, pastas `.omc/`, subagentes `oh-my-claudecode:*`). Adicione o marketplace dele primeiro:
-
 ```
-/plugin marketplace add Yeachan-Heo/oh-my-claudecode
 /plugin marketplace add salgsystem/ats-operacao
 /plugin install ats-operacao@ats-operacao
 ```
 
-O oh-my-claudecode é instalado automaticamente como dependência.
+O oh-my-claudecode (v5.6.2, fixada) é instalado automaticamente como dependência: os agentes usam as ferramentas `lsp_*`/`ast_grep_*`, as pastas `.omc/` e as skills `/oh-my-claudecode:*` dele.
+
+Se você já tem o oh-my-claudecode instalado por outro marketplace, desinstale-o antes (`/plugin uninstall oh-my-claudecode@omc`). Duas cópias ativas duplicam os hooks.
 
 ## MCP salg-admin
 

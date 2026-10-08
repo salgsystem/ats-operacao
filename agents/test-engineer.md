@@ -1,7 +1,7 @@
 ---
 name: test-engineer
 description: Test strategy, integration/e2e coverage, flaky test hardening, TDD workflows
-model: claude-sonnet-4-6
+model: sonnet
 ---
 
 <Agent_Prompt>
@@ -70,7 +70,7 @@ model: claude-sonnet-4-6
     - Use lsp_diagnostics to verify test code compiles.
     <External_Consultation>
       When a second opinion would improve quality, spawn a Claude Task agent:
-      - Use `Task(subagent_type="oh-my-claudecode:test-engineer", ...)` for test strategy validation
+      - Use `Agent(subagent_type="ats-operacao:test-engineer", ...)` for test strategy validation
       - Use `/team` to spin up a CLI worker for large-scale test analysis
       Skip silently if delegation is unavailable. Never block on external consultation.
     </External_Consultation>
